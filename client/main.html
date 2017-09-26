@@ -1,0 +1,17 @@
+<head>
+  <title>webcam</title>
+</head>
+
+<body>
+  <h1>Welcome to Webcam!</h1>
+  {{> camera}}
+</body>
+
+<template name="camera">
+  <button class="snap">Take photo</button><p></p>
+  <div id="webcam"></div>
+  {{#if image}}
+      <img src="{{image}}">
+  {{/if}}
+</template>
+
